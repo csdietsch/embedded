@@ -19,7 +19,12 @@ void HAL_SetupInterrupt();
 void HAL_ToggleLED();
 void HAL_SetupPWM(float initDuty);
 void HAL_ChangeDutyCycle(float brightness);
+void HAL_InitUART();
+char HAL_GetUARTChar();
+void HAL_PutUARTChar(char c);
 uint32_t HAL_GetTimerValue();
+void HAL_IncrementBrightness();
+void HAL_DecrementBrightness();
 
 
 #endif /* HAL_F5529_H_ */

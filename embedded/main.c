@@ -11,20 +11,23 @@
  */
 int main(void)
 {
+
+    unsigned char i = 'a';
     WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
 
 
-    uint32_t u;
-    printf("Enter a number: ");
-    scanf('%d', &u);
-    printf("%d");
-    float dutyCycle = .2;
+//    uint32_t u;
+//    printf("Enter a number: ");
+//    scanf('%d', &u);
+//    printf("%d");
 
+
+    float dutyCycle = .9;
+
+    HAL_InitUART();
     HAL_SetupLED();
     HAL_SetupPWM(dutyCycle);
 
-
-   uint8_t up = 1;
 
 
 
