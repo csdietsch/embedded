@@ -361,3 +361,60 @@ remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recomm
 ' '
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"../main.c", line 17: error #167: too few arguments in function call
+"../main.c", line 24: warning #179-D: variable "up" was declared but never referenced
+"../main.c", line 18: remark #1535-D: (ULP 8.1) variable "dutyCycle" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 24: remark #1535-D: (ULP 8.1) variable "up" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 19: warning #1696-D: multicharacter character literal (potential portability problem)
+"../main.c", line 19: warning #169-D: argument of type "int" is incompatible with parameter of type "const char *"
+"../main.c", line 19: warning #154-D: conversion of nonzero integer to pointer
+"../main.c", line 20: warning #226-D: the format string requires additional arguments
+"../main.c", line 27: warning #179-D: variable "up" was declared but never referenced
+"../main.c", line 18: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 20: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 21: remark #1535-D: (ULP 8.1) variable "dutyCycle" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 27: remark #1535-D: (ULP 8.1) variable "up" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 24 (col. 17): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: embedded.out'
+'Invoking: MSP430 Linker'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"embedded.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/Code Composer/ccsv7/ccs_base/msp430/include" -i"C:/Code Composer/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/lib" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="embedded_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "embedded.out" "./hal_f5529.obj" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: embedded.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+gmake[1]: 'embedded.out' is up to date.
+
+**** Build Finished ****

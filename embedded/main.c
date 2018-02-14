@@ -14,6 +14,10 @@ int main(void)
     WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
 
 
+    uint32_t u;
+    printf("Enter a number: ");
+    scanf('%d', &u);
+    printf("%d");
     float dutyCycle = .2;
 
     HAL_SetupLED();

@@ -407,3 +407,15 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.
 
 !ENTRY com.ti.common.core 4 0 2018-02-13 17:36:46.991
 !MESSAGE debugServerDir=C:/Code Composer/ccsv7/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-02-13 19:35:11.676
+!MESSAGE DS_ERROR: MSP430: JTAG Communication Error 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-02-14 09:31:07.176
+!MESSAGE DS_ERROR: MSP430: JTAG Communication Error 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-02-14 09:31:07.200
+!MESSAGE DS_ERROR: MSP430: Breakpoint Manager: Could not write device Register
+
