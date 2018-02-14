@@ -1,0 +1,40 @@
+#include <msp430.h> 
+#include <stdio.h>
+#include <stdint.h>
+#include <hal_f5529.h>
+#include <stdbool.h>
+
+
+
+/**
+ * main.c
+ */
+int main(void)
+{
+    WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
+
+
+    float dutyCycle = .9;
+
+    HAL_SetupLED();
+    HAL_SetupPWM(dutyCycle);
+
+
+   uint8_t up = 1;
+
+
+              //maximum duty is expf(9.96)
+
+//   while(1){
+//
+//       for(float dutyPercent = 0; dutyPercent <= .96; dutyPercent += .01)
+//       HAL_ChangeDutyCycle()
+//   }
+
+
+
+
+    return 0;
+}
+
+

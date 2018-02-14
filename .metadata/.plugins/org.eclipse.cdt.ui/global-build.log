@@ -1,0 +1,363 @@
+
+**** Clean-only build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 clean -O 
+DEL /F  "embedded.hex"  "embedded.out" 
+DEL /F "hal_f5529.obj" "main.obj" 
+DEL /F "hal_f5529.d" "main.d" 
+'Finished clean'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../hal_f5529.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="hal_f5529.d_raw"  "../hal_f5529.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'hal_f5529.obj' failed
+"../hal_f5529.c", line 34: error #85: invalid combination of type specifiers
+"../hal_f5529.c", line 65: error #85: invalid combination of type specifiers
+"../hal_f5529.c", line 67: remark #1535-D: (ULP 8.1) variable "newBrightness" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+2 errors detected in the compilation of "../hal_f5529.c".
+gmake: *** [hal_f5529.obj] Error 1
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+
+>> Compilation failure
+subdir_rules.mk:16: recipe for target 'main.obj' failed
+"C:/git/embedded/embedded/hal_f5529.h", line 20: error #85: invalid combination of type specifiers
+"C:/git/embedded/embedded/hal_f5529.h", line 21: error #85: invalid combination of type specifiers
+"../main.c", line 17: error #85: invalid combination of type specifiers
+"../main.c", line 23: warning #179-D: variable "up" was declared but never referenced
+"../main.c", line 17: remark #1535-D: (ULP 8.1) variable "dutyCycle" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 23: remark #1535-D: (ULP 8.1) variable "up" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+3 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../hal_f5529.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="hal_f5529.d_raw"  "../hal_f5529.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'hal_f5529.obj' failed
+"../hal_f5529.c", line 34: error #85: invalid combination of type specifiers
+"../hal_f5529.c", line 67: warning #179-D: variable "newBrightness" was declared but never referenced
+1 error detected in the compilation of "../hal_f5529.c".
+gmake: *** [hal_f5529.obj] Error 1
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 23: warning #179-D: variable "up" was declared but never referenced
+"../main.c", line 17: remark #1535-D: (ULP 8.1) variable "dutyCycle" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 23: remark #1535-D: (ULP 8.1) variable "up" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 20 (col. 17): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../hal_f5529.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="hal_f5529.d_raw"  "../hal_f5529.c"
+"../hal_f5529.c", line 67: warning #179-D: variable "newBrightness" was declared but never referenced
+"../hal_f5529.c", line 34 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 39 (col. 20): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 65 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 67 (col. 41): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 69 (col. 15): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../hal_f5529.c'
+' '
+'Building target: embedded.out'
+'Invoking: MSP430 Linker'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"embedded.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/Code Composer/ccsv7/ccs_base/msp430/include" -i"C:/Code Composer/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/lib" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="embedded_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "embedded.out" "./hal_f5529.obj" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: embedded.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../hal_f5529.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="hal_f5529.d_raw"  "../hal_f5529.c"
+"../hal_f5529.c", line 67: warning #179-D: variable "newBrightness" was declared but never referenced
+"../hal_f5529.c", line 34 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 39 (col. 20): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 65 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 67 (col. 41): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 69 (col. 15): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../hal_f5529.c'
+' '
+'Building target: embedded.out'
+'Invoking: MSP430 Linker'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"embedded.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/Code Composer/ccsv7/ccs_base/msp430/include" -i"C:/Code Composer/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/lib" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="embedded_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "embedded.out" "./hal_f5529.obj" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: embedded.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../hal_f5529.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="hal_f5529.d_raw"  "../hal_f5529.c"
+
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'hal_f5529.obj' failed
+"../hal_f5529.c", line 42: warning #225-D: function "HAL_ChangeDutyCycle" declared implicitly
+"../hal_f5529.c", line 42: error #20: identifier "initDity" is undefined
+"../hal_f5529.c", line 69: warning #161-D: declaration is incompatible with previous "HAL_ChangeDutyCycle" (declared at line 42)
+1 error detected in the compilation of "../hal_f5529.c".
+gmake: *** [hal_f5529.obj] Error 1
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 23: warning #179-D: variable "up" was declared but never referenced
+"../main.c", line 17: remark #1535-D: (ULP 8.1) variable "dutyCycle" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 23: remark #1535-D: (ULP 8.1) variable "up" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 20 (col. 17): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../hal_f5529.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="hal_f5529.d_raw"  "../hal_f5529.c"
+"../hal_f5529.c", line 42: warning #225-D: function "HAL_ChangeDutyCycle" declared implicitly
+"../hal_f5529.c", line 69: warning #161-D: declaration is incompatible with previous "HAL_ChangeDutyCycle" (declared at line 42)
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 203 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 204 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 205 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 206 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 207 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 208 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 210 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 211 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 212 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 213 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 214 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 215 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 216 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 217 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 218 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 220 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 221 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 222 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 224 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 225 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 226 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 228 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 229 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 230 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 232 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 233 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 234 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 235 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 236 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 237 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 243 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 244 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 245 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 246 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 247 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 248 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 257 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 259 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 261 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 265 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 267 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 274 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 276 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 278 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 282 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 284 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 291 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 293 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 295 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 299 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 301 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 37 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 42 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 69 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 78 (col. 34): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../hal_f5529.c'
+' '
+'Building target: embedded.out'
+'Invoking: MSP430 Linker'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"embedded.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/Code Composer/ccsv7/ccs_base/msp430/include" -i"C:/Code Composer/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/lib" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="embedded_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "embedded.out" "./hal_f5529.obj" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: embedded.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 23: warning #179-D: variable "up" was declared but never referenced
+"../main.c", line 17: remark #1535-D: (ULP 8.1) variable "dutyCycle" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 23: remark #1535-D: (ULP 8.1) variable "up" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 20 (col. 17): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: embedded.out'
+'Invoking: MSP430 Linker'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"embedded.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/Code Composer/ccsv7/ccs_base/msp430/include" -i"C:/Code Composer/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/lib" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="embedded_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "embedded.out" "./hal_f5529.obj" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: embedded.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 23: warning #179-D: variable "up" was declared but never referenced
+"../main.c", line 17: remark #1535-D: (ULP 8.1) variable "dutyCycle" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 23: remark #1535-D: (ULP 8.1) variable "up" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 20 (col. 17): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building file: ../hal_f5529.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="hal_f5529.d_raw"  "../hal_f5529.c"
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 203 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 204 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 205 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 206 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 207 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 208 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 210 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 211 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 212 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 213 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 214 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 215 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 216 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 217 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 218 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 220 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 221 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 222 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 224 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 225 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 226 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 228 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 229 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 230 (col. 11): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 232 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 233 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 234 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 235 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 236 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 237 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 243 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 244 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 245 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 246 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 247 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 248 (col. 10): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 257 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 259 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 261 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 265 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 267 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 274 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 276 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 278 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 282 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 284 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 291 (col. 27): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 293 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 295 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 299 (col. 9): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include/_defs.h", line 301 (col. 13): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 38 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 43 (col. 24): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 70 (col. 6): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../hal_f5529.c", line 79 (col. 30): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../hal_f5529.c'
+' '
+'Building target: embedded.out'
+'Invoking: MSP430 Linker'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"embedded.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/Code Composer/ccsv7/ccs_base/msp430/include" -i"C:/Code Composer/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/lib" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="embedded_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "embedded.out" "./hal_f5529.obj" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: embedded.out'
+' '
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project embedded ****
+
+"C:\\Code Composer\\ccsv7\\utils\\bin\\gmake" -k -j 4 all -O 
+'Building file: ../main.c'
+'Invoking: MSP430 Compiler'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/Code Composer/ccsv7/ccs_base/msp430/include" --include_path="C:/git/embedded/embedded" --include_path="C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 23: warning #179-D: variable "up" was declared but never referenced
+"../main.c", line 17: remark #1535-D: (ULP 8.1) variable "dutyCycle" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 23: remark #1535-D: (ULP 8.1) variable "up" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 20 (col. 17): remark #1531-D: (ULP 5.2) Detected floating point operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+'Finished building: ../main.c'
+' '
+'Building target: embedded.out'
+'Invoking: MSP430 Linker'
+"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --define=__MSP430F5529__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"embedded.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/Code Composer/ccsv7/ccs_base/msp430/include" -i"C:/Code Composer/ccsv7/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/lib" -i"C:/Code Composer/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="embedded_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "embedded.out" "./hal_f5529.obj" "./main.obj" "../lnk_msp430f5529.cmd"  -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port C in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port D in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+'Finished building target: embedded.out'
+' '
+
+**** Build Finished ****
