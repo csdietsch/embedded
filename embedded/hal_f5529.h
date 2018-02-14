@@ -17,8 +17,8 @@ void HAL_SetupLED();
 void HAL_SetupTimer();
 void HAL_SetupInterrupt();
 void HAL_ToggleLED();
-void HAL_SetupPWM(uint32_t initDuty);
-void HAL_ChangeDutyCycle(uint32_t brightness);
+void HAL_SetupPWM(float initDuty);
+void HAL_ChangeDutyCycle(float brightness);
 uint32_t HAL_GetTimerValue();
 
 

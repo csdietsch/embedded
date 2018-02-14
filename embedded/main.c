@@ -14,7 +14,7 @@ int main(void)
     WDTCTL = WDTPW | WDTHOLD;   // stop watchdog timer
 
 
-    uint32_t dutyCycle = 0;
+    float dutyCycle = .2;
 
     HAL_SetupLED();
     HAL_SetupPWM(dutyCycle);
@@ -22,11 +22,9 @@ int main(void)
 
    uint8_t up = 1;
 
-//    while(1){
-//
-//
-//
-//    }
+
+
+
 
     return 0;
 }

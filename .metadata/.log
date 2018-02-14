@@ -377,3 +377,33 @@ Caused by: java.lang.IllegalArgumentException:
 
 !ENTRY org.eclipse.cdt.core 1 0 2018-02-10 19:07:45.809
 !MESSAGE Indexed 'embedded' (2 sources, 12 headers) in 0.78 sec: 1,024 declarations; 1,280 references; 0 unresolved inclusions; 1 syntax errors; 1 unresolved names (0.043%)
+!SESSION 2018-02-10 19:18:34.005 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 4 0 2018-02-10 19:18:37.946
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2018-02-10 19:18:37.951
+!MESSAGE debugServerDir=C:/Code Composer/ccsv7/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.debug 1 0 2018-02-12 08:14:31.195
+!MESSAGE DS_ERROR: MSP430: JTAG Communication Error 
+
+!SESSION 2018-02-13 17:36:40.534 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 4 0 2018-02-13 17:36:46.983
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2018-02-13 17:36:46.991
+!MESSAGE debugServerDir=C:/Code Composer/ccsv7/ccs_base/DebugServer
